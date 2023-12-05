@@ -1,18 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import LoginPage from './components/LoginPage';
-import RegistrationPage from './components/RegistrationPage';
-import Fallback from './components/Fallback';
-
+import Dashboard from './components/Dashboard';
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<LoginPage />} />
-          <Route path="*" element={<Fallback />} />
-          <Route path="/registration" element={<RegistrationPage />} />
+          <Route path="*" element={<Dashboard />} />
         </Routes>
       </BrowserRouter>
     </div>
